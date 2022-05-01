@@ -9,5 +9,10 @@ configure :development do
 end
 
 get "/" do
-  "This is a test"
+  erb :index
+  # "This is a test"
+end
+
+get "/about" do
+  erb :about
 end
